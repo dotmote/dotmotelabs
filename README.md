@@ -33,3 +33,6 @@ We are happy to offer FREE lifetime updates. You can download the latest version
 
 ### Feedback ###
 
+---
+## Formmating Guide for Blog Articles
+[Doucmentation](https://github.com/dotmote/dotmotelabs/blob/master/docs/BlogArticles/README-for-blog.md) on how to add new blog articles on Dotmote Labs' official website.
