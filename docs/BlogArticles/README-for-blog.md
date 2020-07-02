@@ -1,5 +1,5 @@
 # Adding new blog articles
-This is a doucmentation on how to add new blog articles on Dotmote Labs' official website.
+This is a documentation on how to add new blog articles on Dotmote Labs' official website.
 
 ## Setting up the HTML file and the image folder
 

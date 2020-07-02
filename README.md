@@ -23,7 +23,7 @@ The reason why we include Sketch file separately is to reduce the original downl
 
 
 ### Support ###
-Products fearured on the site are in beta stages, so please feel free to reach out to us via the 
+Products featured on the site are in beta stages, so please feel free to reach out to us via the 
 
 
 ### Free Updates ###
@@ -34,5 +34,5 @@ We are happy to offer FREE lifetime updates. You can download the latest version
 ### Feedback ###
 
 ---
-## Formmating Guide for Blog Articles
-[Doucmentation](https://github.com/dotmote/dotmotelabs/blob/master/docs/BlogArticles/README-for-blog.md) on how to add new blog articles on Dotmote Labs' official website.
+## Formatting Guide for Blog Articles
+[Documentation](https://github.com/dotmote/dotmotelabs/blob/master/docs/BlogArticles/README-for-blog.md) on how to add new blog articles on Dotmote Labs' official website.
