@@ -37,10 +37,6 @@
 
 <body>
     <!-- ========== HEADER ========== -->
-    <!-- <div class="alert alert-info" role="alert">
-        Welcome to Dotmote Labs! Please excuse our appearance as we finish constructing our site. Come back often for
-        new and exciting updates!
-    </div> -->
     <header id="headerBasic" class="u-header">
         <div class="u-header__section">
             <div id="basicLogoAndNav" class="container">
@@ -83,12 +79,16 @@
                                 <ul id="dropdownSubMenuWithDropdown"
                                     class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer"
                                     aria-labelledby="dropdownMegaMenuWithDropdown" style="min-width: 230px;">
+                                    <!-- <li><a class="nav-link u-header__sub-menu-nav-link" href="#"></a>Sweep</li>
+                                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#"></a>Plantbeats</li> -->
+                                    <li><a class="nav-link u-header__sub-menu-nav-link" href="sweep.html">Sweep</a></li>
+                                    <li><a class="nav-link u-header__sub-menu-nav-link"
+                                            href="plantbeats.html">Plantbeats</a></li>
                                     <li><a class="nav-link u-header__sub-menu-nav-link"
                                             href="sapflow_monitor.html">Sapflow
                                             Monitor</a></li>
                                     <li><a class="nav-link u-header__sub-menu-nav-link"
                                             href="micromet_station.html">Micro-Met Station</a></li>
-                                    <!-- <li><a class="nav-link u-header__sub-menu-nav-link" href="product_three.html">Product 3- Coming Soon</a></li> -->
                                 </ul>
                                 <!-- End Dropdown - Submenu -->
                             </li>
@@ -112,19 +112,6 @@
                             </li>
                             <!-- End Link -->
 
-                            <!-- <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                                        data-event="hover"
-                                        data-animation-in="slideInUp"
-                                        data-animation-out="fadeOut">
-                                        <a id="dropdownMegaMenuWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="dropdownSubMenuWithDropdown">Docs</a> -->
-
-                            <!-- Dropdown - Submenu -->
-                            <!-- <ul id="dropdownSubMenuWithDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="dropdownMegaMenuWithDropdown" style="min-width: 230px;">
-                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="SapflowDocs/sapflow_doc_intro.html">Sapflow Monitor</a></li>
-                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="MicrometDocs/micromet_doc_intro.html">Micro-Met Station</a></li>
-                                        </ul> -->
-                            <!-- End Dropdown - Submenu -->
-                            </li>
                             <!-- End Dropdown -->
                         </ul>
                     </div>
@@ -139,26 +126,18 @@
     <!-- ========== MAIN ========== -->
     <main id="content" role="main">
         <!-- Hero Section -->
-        <!-- <div class="d-md-flex bg-img-hero-bottom" style="background-image: linear-gradient(rgba(200, 0, 0, 0.4), rgba(200, 0, 0, 0.4)), url(assets/img/Micromet/MetPic-1.jpg);"> -->
-        <!-- <div class="d-md-flex bg-img-hero-bottom" style="background-image: url(assets/img/Micromet/MetPic-1.jpg);">
-            <div class="container d-md-flex align-items-md-center min-height-md-100vh space-3">
-                <div class="w-lg-80 text-center mx-auto">
-                    <h1 class="display-2 font-size-md-down-5 font-weight-semi-bold mb-0"
-                        style="color:#ffffff; text-shadow: 0px 2px 10px #333333;">Plantbeats</h1>
-                </div>
-            </div>
-        </div> -->
-
         <section>
-            <div class="container">
-                <div class="row align-items-center space-2 space-lg-3">
-                    <div class="col-md-12 col-lg-4 order-md-2 order-lg-1">
+            <div class="container space-2 space-lg-3">
+                <div class="row align-items-center">
+                    <div class="d-flex flex-column justify-content-center col-md-12 col-lg-4 order-md-2 order-lg-1">
                         <h1 class="display-4 font-weight-semi-bold mb-4">Plantbeats</h1>
                         <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit
                             consectetur quasi facere voluptatem dignissimos labore nam suscipit, inventore, alias dicta?
                             Magni molestias deleniti sunt assumenda quidem, sapiente quae ullam!</p>
-                        <a class="btn btn-primary" href="https://plantbeats.io/home">Website</a>
-                        <a class="btn btn-soft-primary" href="http://docs.plantbeats.io/">Docs</a>
+                        <div class="d-inline-flex flex-row justify-content-start">
+                            <a class="btn btn-primary" href="https://plantbeats.io/home">Website</a>
+                            <a class="btn btn-soft-primary ml-2" href="http://docs.plantbeats.io/">Docs</a>
+                        </div>
                     </div>
 
                     <div class="col-md-12 col-lg-8 order-md-1 order-lg-2 mb-md-3 mb-lg-0">
@@ -171,10 +150,10 @@
 
         <!-- Description Section -->
         <section class="bg-soft-primary">
-            <div class="container">
-                <div class="row justify-content-center space-2 space-lg-3">
-                    <div class="col-4">
-                        <h2 class="font-weight-semi-bold">Feature</h2>
+            <div class="container space-2 space-lg-3">
+                <div class="row justify-content-center">
+                    <div class="d-flex flex-column justify-content-center col-4">
+                        <h2 class="font-weight-semi-bold">Dashboard</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam nam natus, soluta
                             voluptates iusto ipsum mollitia tenetur quas dolore voluptatem sequi, molestias corrupti
                             voluptate architecto non quasi molestiae amet ratione!</p>
@@ -189,10 +168,10 @@
 
         <!-- Description Section -->
         <section>
-            <div class="container">
-                <div class="row justify-content-center space-2 space-lg-3">
-                    <div class="col-4">
-                        <h2 class="font-weight-semi-bold">Feature</h2>
+            <div class="container space-2 space-lg-3">
+                <div class="row justify-content-center">
+                    <div class="d-flex flex-column justify-content-center col-4">
+                        <h2 class="font-weight-semi-bold">Graphs</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam nam natus, soluta
                             voluptates iusto ipsum mollitia tenetur quas dolore voluptatem sequi, molestias corrupti
                             voluptate architecto non quasi molestiae amet ratione!</p>
@@ -207,10 +186,10 @@
 
         <!-- Description Section -->
         <section class="bg-soft-primary">
-            <div class="container">
-                <div class="row justify-content-center space-2 space-lg-3">
-                    <div class="col-4">
-                        <h2 class="font-weight-semi-bold">Feature</h2>
+            <div class="container space-2 space-lg-3">
+                <div class="row justify-content-center">
+                    <div class="d-flex flex-column justify-content-center col-4">
+                        <h2 class="font-weight-semi-bold">Nodes</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam nam natus, soluta
                             voluptates iusto ipsum mollitia tenetur quas dolore voluptatem sequi, molestias corrupti
                             voluptate architecto non quasi molestiae amet ratione!</p>
@@ -225,23 +204,48 @@
 
 
         <!-- Sap Flow -->
-        <!-- Title -->
         <section>
-            <div class="w-md-80 w-lg-50 text-center mx-md-auto space-2 space-lg-3">
-                <span class="btn btn-xs btn-soft-success btn-pill mb-2">Hardware Integrations</span>
-                <h2 class="text-primary font-weight-semi-bold">Sap Flow Monitor</h2>
+            <div class="container space-2 space-lg-3">
+                <div class="row d-flex flex-column justify-content-center align-items-center">
+                    <span class="btn btn-xs btn-soft-success btn-pill mb-2">Hardware Integrations</span>
+                    <h2 class="text-primary font-weight-semi-bold">Sap Flow Monitor</h2>
+                </div>
+                <div class="row space-top-1">
+                    <div class="col-8">
+                        <img class="img-fluid" src="assets/img/SapflowMonitor/SapPic-2.jpg" alt="">
+                    </div>
+                    <div class="col-4 d-flex flex-column justify-content-center align-items-start">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit impedit blanditiis
+                            aliquam quas nulla corporis soluta accusamus rem nemo repellat vitae suscipit, sint
+                            veritatis non tenetur. Aliquid reiciendis deleniti sed!</p>
+                        <a class="btn btn-primary" href="sapflow_monitor.html">Learn More</a>
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- End Title -->
-
         <!-- End Sap Flow -->
 
+        <!-- Micromet -->
         <section class="bg-soft-primary">
-            <div class="w-md-80 w-lg-50 text-center mx-md-auto space-2 space-lg-3">
-                <span class="btn btn-xs btn-soft-success btn-pill mb-2">Hardware Integrations</span>
-                <h2 class="text-primary font-weight-semi-bold">Micro-Met Station</h2>
+            <div class="container space-2 space-lg-3">
+                <div class="row d-flex flex-column justify-content-center align-items-center">
+                    <span class="btn btn-xs btn-soft-success btn-pill mb-2">Hardware Integrations</span>
+                    <h2 class="text-primary font-weight-semi-bold">Micro-Met Station</h2>
+                </div>
+                <div class="row space-top-1">
+                    <div class="col-8">
+                        <img class="img-fluid" src="assets/img/Micromet/MetPic-1.jpg" alt="">
+                    </div>
+                    <div class="col-4 d-flex flex-column justify-content-center align-items-start">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit impedit blanditiis
+                            aliquam quas nulla corporis soluta accusamus rem nemo repellat vitae suscipit, sint
+                            veritatis non tenetur. Aliquid reiciendis deleniti sed!</p>
+                        <a class="btn btn-primary" href="micromet_station.html">Learn More</a>
+                    </div>
+                </div>
             </div>
         </section>
+        <!-- End Micromet -->
 
     </main>
     <!-- ========== END MAIN ========== -->
@@ -250,9 +254,9 @@
     <footer class="border-top">
         <div class="container space-2">
             <div class="row">
-                <div class="col-sm-12 col-md-3 col-lg-6 order-sm-3 order-md-1 text-sm-center text-md-left mt-sm-4 mt-md-0"
-                    style="border: none 3px red;">
-                    <div class="d-flex flex-column justify-content-sm-center justify-content-md-left">
+                <div
+                    class="col-sm-12 col-md-3 col-lg-6 order-sm-3 order-md-1 text-sm-center text-md-left mt-sm-4 mt-md-0 align-self-center">
+                    <div class="d-flex flex-column justify-content-center" style="border: none 3px red;">
                         <!-- Logo -->
                         <div><a class="navbar-brand u-header__navbar-brand m-0" href="index.html" aria-label="Front"
                                 style="width: 96px; height: 96px;">
@@ -260,7 +264,7 @@
                                     style="width: 96px; height: 96px;">
                             </a></div>
                         <!-- End Logo -->
-                        <p class="small text-muted mt-2">© Dotmote Labs 2022</p>
+                        <p class="small text-muted mt-4 mb-0">© Dotmote Labs 2022</p>
                     </div>
                 </div>
 
@@ -268,13 +272,9 @@
                     style="border: none 3px blue;">
                     <h4 class="h6 font-weight-semi-bold">Products</h4>
 
-                    <!-- List Group -->
-                    <!-- <ul class="list-group list-group-flush list-group-borderless mb-0">
-                            <li><a class="list-group-item list-group-item-action" href="#">Sweep</a></li>
-                            <li><a class="list-group-item list-group-item-action" href="#">Plantbeats</a></li>
-                        </ul> -->
-
                     <ul class="list-group list-group-flush list-group-borderless mb-0">
+                        <li><a class="list-group-item list-group-item-action" href="#">Sweep</a></li>
+                        <li><a class="list-group-item list-group-item-action" href="#">Plantbeats</a></li>
                         <li><a class="list-group-item list-group-item-action" href="sapflow_monitor.html">Sapflow
                                 Monitor</a></li>
                         <li><a class="list-group-item list-group-item-action" href="micromet_station.html">Micro-Met
@@ -324,16 +324,6 @@
                     <!-- End List Group -->
                 </div>
 
-                <!-- <div class="col-sm-3 col-lg-2 order-sm-3 mb-4 mb-sm-0">
-                            <h4 class="h6 font-weight-semi-bold">Resources</h4> -->
-
-                <!-- List Group -->
-                <!-- <ul class="list-group list-group-flush list-group-borderless mb-0">
-                                <li><a class="list-group-item list-group-item-action" href="terms.html">Terms of Service</a></li>
-                                <li><a class="list-group-item list-group-item-action" href="privacy.html">Privacy Policy</a></li>
-                            </ul> -->
-                <!-- End List Group -->
-                <!-- </div> -->
             </div>
         </div>
     </footer>
