@@ -444,7 +444,7 @@
                                     style="width: 96px; height: 96px;">
                             </a></div>
                         <!-- End Logo -->
-                        <p class="small text-muted mt-4 mb-0">© Dotmote Labs 2022</p>
+                        <p class="small text-muted mt-4 mb-0">© Dotmote Labs <span id="footer-year"></span></p>
                     </div>
                 </div>
 
@@ -549,6 +549,9 @@
         });
 
         $(document).on('ready', function () {
+            var current_year = new Date().getFullYear();
+            $("#footer-year").text(current_year);
+
             // initialization of header
             $.HSCore.components.HSHeader.init($('#header'));
 
