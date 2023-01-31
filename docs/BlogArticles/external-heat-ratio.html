@@ -66,7 +66,7 @@
                         <ul class="navbar-nav u-header__navbar-nav">
                             <!-- Link -->
                             <li class="nav-item u-header__nav-item active">
-                                <a class="nav-link u-header__nav-link" href="index.html">Home</a>
+                                <a class="nav-link u-header__nav-link" href="../index.html">Home</a>
                             </li>
                             <!-- End Link -->
 
@@ -81,12 +81,17 @@
                                 <ul id="dropdownSubMenuWithDropdown"
                                     class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer"
                                     aria-labelledby="dropdownMegaMenuWithDropdown" style="min-width: 230px;">
+                                    <!-- <li><a class="nav-link u-header__sub-menu-nav-link" href="#"></a>Sweep</li>
+                                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#"></a>Plantbeats</li> -->
+                                    <li><a class="nav-link u-header__sub-menu-nav-link" href="../sweep.html">Sweep</a>
+                                    </li>
                                     <li><a class="nav-link u-header__sub-menu-nav-link"
-                                            href="sapflow_monitor.html">Sapflow
+                                            href="../plantbeats.html">Plantbeats</a></li>
+                                    <li><a class="nav-link u-header__sub-menu-nav-link"
+                                            href="../sapflow_monitor.html">Sapflow
                                             Monitor</a></li>
                                     <li><a class="nav-link u-header__sub-menu-nav-link"
-                                            href="micromet_station.html">Micro-Met Station</a></li>
-                                    <!-- <li><a class="nav-link u-header__sub-menu-nav-link" href="product_three.html">Product 3- Coming Soon</a></li> -->
+                                            href="../micromet_station.html">Micro-Met Station</a></li>
                                 </ul>
                                 <!-- End Dropdown - Submenu -->
                             </li>
@@ -94,35 +99,22 @@
 
                             <!-- Link -->
                             <li class="nav-item u-header__nav-item">
-                                <a class="nav-link u-header__nav-link" href="blog.html">Blog</a>
+                                <a class="nav-link u-header__nav-link" href="../blog.html">Blog</a>
                             </li>
                             <!-- End Link -->
 
                             <!-- Link -->
                             <li class="nav-item u-header__nav-item">
-                                <a class="nav-link u-header__nav-link" href="about_us.html">About Us</a>
+                                <a class="nav-link u-header__nav-link" href="../about_us.html">About Us</a>
                             </li>
                             <!-- End Link -->
 
                             <!-- Link -->
                             <li class="nav-item u-header__nav-item">
-                                <a class="nav-link u-header__nav-link" href="contact_us.html">Contact Us</a>
+                                <a class="nav-link u-header__nav-link" href="../contact_us.html">Contact Us</a>
                             </li>
                             <!-- End Link -->
 
-                            <!-- <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                                        data-event="hover"
-                                        data-animation-in="slideInUp"
-                                        data-animation-out="fadeOut">
-                                        <a id="dropdownMegaMenuWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="dropdownSubMenuWithDropdown">Docs</a> -->
-
-                            <!-- Dropdown - Submenu -->
-                            <!-- <ul id="dropdownSubMenuWithDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="dropdownMegaMenuWithDropdown" style="min-width: 230px;">
-                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="SapflowDocs/sapflow_doc_intro.html">Sapflow Monitor</a></li>
-                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="MicrometDocs/micromet_doc_intro.html">Micro-Met Station</a></li>
-                                        </ul> -->
-                            <!-- End Dropdown - Submenu -->
-                            </li>
                             <!-- End Dropdown -->
                         </ul>
                     </div>
@@ -743,17 +735,18 @@
     <footer class="border-top">
         <div class="container space-2">
             <div class="row">
-                <div class="col-sm-12 col-md-3 col-lg-6 order-sm-3 order-md-1 text-sm-center text-md-left mt-sm-4 mt-md-0"
-                    style="border: none 3px red;">
-                    <div class="d-flex flex-column justify-content-sm-center justify-content-md-left">
+                <div
+                    class="col-sm-12 col-md-3 col-lg-6 order-sm-3 order-md-1 text-sm-center text-md-left mt-sm-4 mt-md-0 align-self-center">
+                    <div class="d-flex flex-column justify-content-center" style="border: none 3px red;">
                         <!-- Logo -->
-                        <div><a class="navbar-brand u-header__navbar-brand m-0" href="index.html" aria-label="Front"
+                        <div><a class="navbar-brand u-header__navbar-brand m-0" href="../index.html" aria-label="Front"
                                 style="width: 96px; height: 96px;">
-                                <img class=" u-header__navbar-brand-default" src="design/logo_vertical.svg" alt="Logo"
-                                    style="width: 96px; height: 96px;">
+                                <img class=" u-header__navbar-brand-default" src="../design/logo_vertical.svg"
+                                    alt="Logo" style="width: 96px; height: 96px;">
                             </a></div>
                         <!-- End Logo -->
-                        <p class="small text-muted mt-2">© Dotmote Labs 2022</p>
+                        <!-- <p class="small text-muted mt-4 mb-0">© Dotmote Labs 2022</p> -->
+                        <p class="small text-muted mt-4 mb-0">© Dotmote Labs <span id="footer-year"></span></p>
                     </div>
                 </div>
 
@@ -761,16 +754,13 @@
                     style="border: none 3px blue;">
                     <h4 class="h6 font-weight-semi-bold">Products</h4>
 
-                    <!-- List Group -->
-                    <!-- <ul class="list-group list-group-flush list-group-borderless mb-0">
-                            <li><a class="list-group-item list-group-item-action" href="#">Sweep</a></li>
-                            <li><a class="list-group-item list-group-item-action" href="#">Plantbeats</a></li>
-                        </ul> -->
-
                     <ul class="list-group list-group-flush list-group-borderless mb-0">
-                        <li><a class="list-group-item list-group-item-action" href="sapflow_monitor.html">Sapflow
+                        <li><a class="list-group-item list-group-item-action" href="../sweep.html">Sweep</a></li>
+                        <li><a class="list-group-item list-group-item-action" href="../plantbeats.html">Plantbeats</a>
+                        </li>
+                        <li><a class="list-group-item list-group-item-action" href="../sapflow_monitor.html">Sapflow
                                 Monitor</a></li>
-                        <li><a class="list-group-item list-group-item-action" href="micromet_station.html">Micro-Met
+                        <li><a class="list-group-item list-group-item-action" href="../micromet_station.html">Micro-Met
                                 Station</a>
                         </li>
                     </ul>
@@ -783,8 +773,8 @@
 
                     <!-- List Group -->
                     <ul class="list-group list-group-flush list-group-borderless mb-0">
-                        <li><a class="list-group-item list-group-item-action" href="blog.html">Blog</a></li>
-                        <li><a class="list-group-item list-group-item-action" href="about_us.html">About Us</a></li>
+                        <li><a class="list-group-item list-group-item-action" href="../blog.html">Blog</a></li>
+                        <li><a class="list-group-item list-group-item-action" href="../about_us.html">About Us</a></li>
                     </ul>
                     <!-- End List Group -->
                 </div>
@@ -795,7 +785,8 @@
 
                     <!-- List Group -->
                     <ul class="list-group list-group-flush list-group-borderless mb-1">
-                        <li><a class="list-group-item list-group-item-action" href="contact_us.html">Contact Us</a></li>
+                        <li><a class="list-group-item list-group-item-action" href="../contact_us.html">Contact Us</a>
+                        </li>
                     </ul>
 
                     <!-- Social Networks -->
@@ -817,16 +808,6 @@
                     <!-- End List Group -->
                 </div>
 
-                <!-- <div class="col-sm-3 col-lg-2 order-sm-3 mb-4 mb-sm-0">
-                            <h4 class="h6 font-weight-semi-bold">Resources</h4> -->
-
-                <!-- List Group -->
-                <!-- <ul class="list-group list-group-flush list-group-borderless mb-0">
-                                <li><a class="list-group-item list-group-item-action" href="terms.html">Terms of Service</a></li>
-                                <li><a class="list-group-item list-group-item-action" href="privacy.html">Privacy Policy</a></li>
-                            </ul> -->
-                <!-- End List Group -->
-                <!-- </div> -->
             </div>
         </div>
     </footer>
@@ -876,6 +857,9 @@
         });
 
         $(document).on('ready', function () {
+            var current_year = new Date().getFullYear();
+            $("#footer-year").text(current_year);
+
             // initialization of header
             $.HSCore.components.HSHeader.init($('#header'));
 
