@@ -33,92 +33,14 @@
 
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="assets/css/theme.min1.css">
+
+    <script type="module" src="assets/js/custom/TopNav.js"></script>
+    <script type="module" src="assets/js/custom/FooterNav.js"></script>
 </head>
 
 <body>
     <!-- ========== HEADER ========== -->
-    <header id="headerBasic" class="u-header">
-        <div class="u-header__section">
-            <div id="basicLogoAndNav" class="container">
-                <!-- Nav -->
-                <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
-                    <!-- Logo -->
-                    <a class="navbar-brand u-header__navbar-brand" href="../index.html" aria-label="Front">
-                        <img class="u-header__navbar-brand-default" src="../design/logo_horizontal_1.svg" alt="Logo"
-                            width="75px" height="75px">
-                    </a>
-                    <!-- End Logo -->
-
-                    <!-- Responsive Toggle Button -->
-                    <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation"
-                        aria-expanded="false" aria-controls="navBarBasic" data-toggle="collapse"
-                        data-target="#navBarBasic">
-                        <span id="hamburgerTriggerBasic" class="u-hamburger__box">
-                            <span class="u-hamburger__inner"></span>
-                        </span>
-                    </button>
-                    <!-- End Responsive Toggle Button -->
-
-                    <!-- Navigation -->
-                    <div id="navBarBasic" class="collapse navbar-collapse u-header__navbar-collapse">
-                        <ul class="navbar-nav u-header__navbar-nav">
-                            <!-- Link -->
-                            <li class="nav-item u-header__nav-item active">
-                                <a class="nav-link u-header__nav-link" href="../index.html">Home</a>
-                            </li>
-                            <!-- End Link -->
-
-                            <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover"
-                                data-animation-in="slideInUp" data-animation-out="fadeOut">
-                                <a id="dropdownMegaMenuWithDropdown"
-                                    class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;"
-                                    aria-haspopup="true" aria-expanded="false"
-                                    aria-labelledby="dropdownSubMenuWithDropdown">Products</a>
-
-                                <!-- Dropdown - Submenu -->
-                                <ul id="dropdownSubMenuWithDropdown"
-                                    class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer"
-                                    aria-labelledby="dropdownMegaMenuWithDropdown" style="min-width: 230px;">
-                                    <li><a class="nav-link u-header__sub-menu-nav-link" href="../sweep.html">SWEEP</a>
-                                    </li>
-                                    <li><a class="nav-link u-header__sub-menu-nav-link"
-                                            href="../plantbeats.html">Plantbeats®</a></li>
-                                    <li><a class="nav-link u-header__sub-menu-nav-link"
-                                            href="../sapflow_monitor.html">Sapflow Monitor</a></li>
-                                    <li><a class="nav-link u-header__sub-menu-nav-link"
-                                            href="../micromet_station.html">Micro-Met Station</a></li>
-                                </ul>
-                                <!-- End Dropdown - Submenu -->
-                            </li>
-                            <!-- End Dropdown -->
-
-                            <!-- Link -->
-                            <li class="nav-item u-header__nav-item">
-                                <a class="nav-link u-header__nav-link" href="../blog.html">Blog</a>
-                            </li>
-                            <!-- End Link -->
-
-                            <!-- Link -->
-                            <li class="nav-item u-header__nav-item">
-                                <a class="nav-link u-header__nav-link" href="../about_us.html">About Us</a>
-                            </li>
-                            <!-- End Link -->
-
-                            <!-- Link -->
-                            <li class="nav-item u-header__nav-item">
-                                <a class="nav-link u-header__nav-link" href="../contact_us.html">Contact Us</a>
-                            </li>
-                            <!-- End Link -->
-
-                            <!-- End Dropdown -->
-                        </ul>
-                    </div>
-                    <!-- End Navigation -->
-                </nav>
-                <!-- End Nav -->
-            </div>
-        </div>
-    </header>
+    <top-nav></top-nav>
     <!-- ========== END HEADER ========== -->
 
     <!-- ========== MAIN ========== -->
@@ -215,85 +137,7 @@
     <!-- ========== END MAIN ========== -->
 
     <!-- ========== FOOTER ========== -->
-    <footer class="border-top">
-        <div class="container space-2">
-            <div class="row">
-                <div
-                    class="col-sm-12 col-md-3 col-lg-6 order-sm-3 order-md-1 text-sm-center text-md-left mt-sm-4 mt-md-0 align-self-center">
-                    <div class="d-flex flex-column justify-content-center" style="border: none 3px red;">
-                        <!-- Logo -->
-                        <div><a class="navbar-brand u-header__navbar-brand m-0" href="../index.html" aria-label="Front"
-                                style="width: 96px; height: 96px;">
-                                <img class=" u-header__navbar-brand-default" src="../design/logo_vertical.svg"
-                                    alt="Logo" style="width: 96px; height: 96px;">
-                            </a></div>
-                        <!-- End Logo -->
-                        <!-- <p class="small text-muted mt-4 mb-0">© Dotmote Labs 2022</p> -->
-                        <p class="small text-muted mt-4 mb-0">© Dotmote Labs <span id="footer-year"></span></p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 col-md-3 col-lg-2 order-sm-2 mb-4 text-sm-center text-md-left"
-                    style="border: none 3px blue;">
-                    <h4 class="h6 font-weight-semi-bold">Products</h4>
-
-                    <ul class="list-group list-group-flush list-group-borderless mb-0">
-                        <li><a class="list-group-item list-group-item-action" href="../sweep.html">SWEEP</a></li>
-                        <li><a class="list-group-item list-group-item-action" href="../plantbeats.html">Plantbeats®</a>
-                        </li>
-                        <li><a class="list-group-item list-group-item-action" href="../sapflow_monitor.html">Sapflow
-                                Monitor</a></li>
-                        <li><a class="list-group-item list-group-item-action" href="../micromet_station.html">Micro-Met
-                                Station</a>
-                        </li>
-                    </ul>
-                    <!-- End List Group -->
-                </div>
-
-                <div class="col-sm-4 col-md-3 col-lg-2 order-sm-2 mb-4 text-sm-center text-md-left"
-                    style="border: none 3px green;">
-                    <h4 class="h6 font-weight-semi-bold">Company</h4>
-
-                    <!-- List Group -->
-                    <ul class="list-group list-group-flush list-group-borderless mb-0">
-                        <li><a class="list-group-item list-group-item-action" href="../blog.html">Blog</a></li>
-                        <li><a class="list-group-item list-group-item-action" href="../about_us.html">About Us</a></li>
-                    </ul>
-                    <!-- End List Group -->
-                </div>
-
-                <div class="col-sm-4 col-md-3 col-lg-2 order-sm-2 mb-4 text-sm-center text-md-left"
-                    style="border: none 3px purple;">
-                    <h4 class="h6 font-weight-semi-bold">Contact</h4>
-
-                    <!-- List Group -->
-                    <ul class="list-group list-group-flush list-group-borderless mb-1">
-                        <li><a class="list-group-item list-group-item-action" href="../contact_us.html">Contact Us</a>
-                        </li>
-                    </ul>
-
-                    <!-- Social Networks -->
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item mx-0">
-                            <a class="btn btn-sm btn-icon btn-soft-secondary rounded-circle"
-                                href="https://twitter.com/dotmotelabs">
-                                <span class="fab fa-twitter btn-icon__inner"></span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item mx-0">
-                            <a class="btn btn-sm btn-icon btn-soft-secondary rounded-circle"
-                                href="https://github.com/dotmote">
-                                <span class="fab fa-github btn-icon__inner"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- End Social Networks -->
-                    <!-- End List Group -->
-                </div>
-
-            </div>
-        </div>
-    </footer>
+    <footer-nav></footer-nav>
     <!-- ========== END FOOTER ========== -->
 
 
