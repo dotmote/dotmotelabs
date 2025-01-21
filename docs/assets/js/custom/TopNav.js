@@ -43,14 +43,14 @@ class TopNav extends HTMLElement {
                                     <ul id="dropdownSubMenuWithDropdown"
                                         class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer"
                                         aria-labelledby="dropdownMegaMenuWithDropdown" style="min-width: 230px;">
-                                        <li><a class="nav-link u-header__sub-menu-nav-link" href="sweep.html">SWEEP</a>
+                                        <li><a class="nav-link u-header__sub-menu-nav-link" href="../sweep.html">SWEEP</a>
                                         </li>
                                         <li><a class="nav-link u-header__sub-menu-nav-link"
-                                            href="plantbeats.html">Plantbeats®</a></li>
+                                            href="../plantbeats.html">Plantbeats®</a></li>
                                         <li><a class="nav-link u-header__sub-menu-nav-link"
-                                            href="sapflow_monitor.html">Sapflow Monitor</a></li>
+                                            href="../sapflow_monitor.html">Sapflow Monitor</a></li>
                                         <li><a class="nav-link u-header__sub-menu-nav-link"
-                                            href="micromet_station.html">Micro-Met Station</a></li>
+                                            href="../micromet_station.html">Micro-Met Station</a></li>
                                     </ul>
                                     <!-- End Dropdown - Submenu -->
                                 </li>
