@@ -41,6 +41,9 @@ class FooterNav extends HTMLElement {
                                         href="../micromet_station.html">Micro-Met
                                         Station</a>
                                 </li>
+                                <li><a class="list-group-item list-group-item-action"
+                                        href="../terraview.html">TerraView™</a>
+                                </li>
                             </ul>
                             <!-- End List Group -->
                         </div>

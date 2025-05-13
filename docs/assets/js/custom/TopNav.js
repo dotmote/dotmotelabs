@@ -51,6 +51,8 @@ class TopNav extends HTMLElement {
                                             href="../sapflow_monitor.html">Sapflow Monitor</a></li>
                                         <li><a class="nav-link u-header__sub-menu-nav-link"
                                             href="../micromet_station.html">Micro-Met Station</a></li>
+                                        <li><a class="nav-link u-header__sub-menu-nav-link"
+                                            href="../terraview.html">TerraView™</a></li>
                                     </ul>
                                     <!-- End Dropdown - Submenu -->
                                 </li>
