@@ -3,7 +3,8 @@
 
 <head>
     <!-- Title -->
-    <title>Article Headline | Dotmote Labs</title>
+    <title>🌿 Mapping Wetlands with Terrain Derivatives and U-Net | Dotmote Labs
+    </title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
@@ -62,9 +63,8 @@
             <!-- Blog Header -->
             <div class="w-lg-60 mx-lg-auto">
                 <div class="mb-4">
-                    <h1 class="h2 font-weight-medium">Article Headline</h1>
+                    <h1 class="h2 font-weight-medium">🌿 Mapping Wetlands with Terrain Derivatives and U-Net</h1>
                 </div>
-
 
                 <!-- Author -->
                 <div class="border-top border-bottom py-4 mb-5">
@@ -72,15 +72,15 @@
                         <div class="col-md-7 mb-5 mb-md-0">
                             <div class="media align-items-center">
                                 <div class="u-avatar">
-                                    <img class="img-fluid rounded-circle" src="../assets/img/AboutUs/kevin.jpeg"
-                                        alt="Kevin Profile Picture">
+                                    <img class="img-fluid rounded-circle" src="../assets/img/AboutUs/aji.jpeg"
+                                        alt="Aji Profile Picture">
                                 </div>
                                 <div class="media-body font-size-1 ml-3">
-                                    <span class="h6 font-weight-medium"><a href="#">Kevin Xu</a>
+                                    <span class="h6 font-weight-medium"><a href="#">Aji John</a>
                                         <!-- <button type="button"
                                             class="btn btn-xs btn-soft-primary font-weight-medium transition-3d-hover py-1 px-2 ml-1">Follow</button> -->
                                     </span>
-                                    <span class="d-block text-muted">October 2019</span>
+                                    <span class="d-block text-muted">October 2025</span>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +90,7 @@
                                 </h2>
 
                                 <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded-circle ml-2"
-                                    href="http://www.facebook.com/share.php?u=https://dotmotelabs.com/BlogArticles/external-heat-ratio.html"
+                                    href="http://www.facebook.com/share.php?u=https://dotmotelabs.com/BlogArticles/wetlands.html"
                                     target="_blank">
                                     <span class="fab fa-facebook-f btn-icon__inner"></span>
                                 </a>
@@ -111,19 +111,17 @@
                     </div>
                 </div>
                 <!-- End Author -->
-
-                <p>Intro paragraph (optional)</p>
-
-                <div class="my-4">
-                    <img class="img-fluid rounded" src="../assets/img/Blog/external-heat-ratio/sapflow_10_25_2019.png"
-                        alt="Sapflow Data Visualization">
-                </div>
+                <p style="font-style: italic;">A scalable, deep-learning workflow for wetland detection — built with SWEEP and open terrain data.</p>
             </div>
             <!-- End of Blog Header-->
 
             <div class="w-lg-60 mx-lg-auto">
-                <h3 class="h4">Section 1</h3>
-                <p>Inserting descriptive texts here.</p>
+                <h3 class="h4">🔍 Why Wetlands, Why Now?</h3>
+                <p>Wetlands are powerful carbon sinks, water filters, and biodiversity hotspots — yet mapping them remains a challenge. Optical imagery can be obscured by cloud cover or forest canopies, and field surveys are costly and time-consuming.</p>
+
+                <p>What if we could detect wetlands <span style="font-weight: bold;">just from terrain</span>?</p>
+
+                <p>This project builds a fully automated deep-learning workflow that uses <span style="font-weight: bold;">topographic derivatives</span> (slope, curvature, TPI, etc.) as inputs to a <span style="font-weight: bold;">U-Net model,</span> enabling wetland prediction across large regions — no satellite imagery required.</p>
             </div>
 
             <!-- Space Before h4 Heading-->
@@ -131,52 +129,20 @@
             <!-- End of Space Before h4 Heading-->
 
             <div class="w-lg-60 mx-lg-auto">
-                <!-- <blockquote
-                    class="card bg-soft-primary border-0 text-center font-size-2 font-weight-medium text-lh-md p-5 my-5">
-                    "I love Front! I love the ease of use, I love the fact that I have total creative freedom..."
-                    <span class="d-block text-muted font-size-1 mt-2">- Adrian Teh</span>
-                </blockquote> -->
+                <h3 class="h4">⚙️ Workflow Overview</h3>
 
-                <h3 class="h4">Section 1</h3>
-                <h3 class="h5">Section 1.1</h3>
+                <p>This workflow is built using the <a href="https://sweep.run/">SWEEP</a> engine — a multi-cloud orchestrator for Earth data workflows.</p>
 
-                <p>Inserting descriptive texts here.</p>
+                <h4 class="h5">🛠️ Steps:</h4>
 
-                <div class="my-4">
-                    <img class="img-fluid rounded" src="../assets/img/Stock/img6.jpg" alt="Example Image">
-                </div>
+                <ol>
+                    <li><span style="font-weight: bold;">fn_read_hucs:</span> Load list of HUC12 watershed IDs</li>
+                    <li><span style="font-weight: bold;">fn_fetch_stacks:</span> Generate and upload multiband terrain stack</li>
+                    <li><span style="font-weight: bold;">predict_huc:</span> Run patch-wise inference using U-Net model from Hugging Face</li>
+                    <li><span style="font-weight: bold;">mosaicpredictions:</span> Combine all per-HUC masks into one seamless raster</li>
+                </ol>
 
-                <div class="my-4">
-                    <img class="img-fluid rounded" src="../assets/img/Stock/img6.jpg" alt="Example Image">
-                </div>
-            </div>
-
-            <div class="w-lg-60 mx-lg-auto">
-                <p>Inserting descriptive texts here.</p>
-            </div>
-
-            <div class="w-lg-60 mx-lg-auto">
-                <h3 class="h6">Section 1.1.1</h3>
-                <p>Example of how to create an external link within the body paragraph <a href="#"
-                        target="_blank">example</a>.
-                    Inserting descriptive texts here.</p>
-            </div>
-
-            <div class="w-lg-60 mx-lg-auto">
-                <h3 class="h6">Section 1.1.2</h3>
-                <p>Example of how to create an external link within the body paragraph <a href="#"
-                        target="_blank">example</a>.
-                    Inserting descriptive texts here.</p>
-            </div>
-
-            <div class="w-lg-60 mx-lg-auto">
-                <h3 class="h5">Section 1.2</h3>
-                <p>Inserting descriptive texts here.</p>
-            </div>
-
-            <div class="w-lg-60 mx-lg-auto">
-                <h3 class="h6">Section 1.2.1</h3>
-                <p>Inserting descriptive texts here.</p>
+                📂 GitHub repo: <a href="https://github.com/SWEEP-Inc/sweep-wetlands/tree/main">wetlands-demo</a>
             </div>
 
             <!-- Space Before h4 Heading-->
@@ -184,49 +150,117 @@
             <!-- End of Space Before h4 Heading-->
 
             <div class="w-lg-60 mx-lg-auto">
-                <h3 class="h4">Section 2</h3>
-                <h3 class="h5">Section 2.1</h3>
-                <p>Inserting descriptive texts here.</p>
-            </div>
+                <h3 class="h4">🧠 Model Architecture</h3>
 
-            <div class="w-lg-60 mx-lg-auto">
-                <h3 class="h5">Section 2.2</h3>
-                <p>Inserting descriptive texts here.</p>
-            </div>
+                <p>We use a <span style="font-weight: bold;">U-Net with ASPP</span> (Atrous Spatial Pyramid Pooling), trained on stacked rasters representing:</p>
 
-            <!-- Space Before h4 Heading-->
-            <div class="container space-top-1"></div>
-            <!-- End of Space Before h4 Heading-->
-
-            <div class="w-lg-60 mx-lg-auto">
-                <h3 class="h4">Section 3</h3>
-                <p>Inserting descriptive texts here.</p>
-                <div class="my-4">
-                    <img class="img-fluid rounded" src="../assets/img/Stock/img6.jpg" alt="Example Image">
-                </div>
-            </div>
-
-            <!-- Space Before h4 Heading-->
-            <div class="container space-top-1"></div>
-            <!-- End of Space Before h4 Heading-->
-
-            <div class="w-lg-60 mx-lg-auto">
-                <h3 class="h4">Section 4</h3>
-                <p>Inserting descriptive texts here.</p>
-                <h3 class="h5">Section 4.1</h3>
-                <ul class="text-secondary">
-                    <li class="py-2">list item 1.</li>
-                    <li class="py-2">list item 2.</li>
-                    <li class="py-2">list item 3.</li>
+                <ul>
+                    <li>Slope</li>
+                    <li>TPI</li>
+                    <li>Curvature</li>
+                    <li>Elevation</li>
                 </ul>
-            </div>
+
+                <p>Training is patch-based (128×128), with BCE + Dice loss, and inference is streamed over each HUC tile.</p>
+
+                <p>Weights are published on Hugging Face: <a href="https://huggingface.co/dotmotelabs/Unet-ASPP">dotmotelabs/Unet-ASPP</a></p>
+            </div> 
+
+            <!-- Space Before h4 Heading-->
+            <div class="container space-top-1"></div>
+            <!-- End of Space Before h4 Heading-->
 
             <div class="w-lg-60 mx-lg-auto">
-                <h3 class="h5">Section 4.2</h3>
-                <ul class="text-secondary">
-                    <li class="py-2">list item 1.</li>
-                    <li class="py-2">list item 2.</li>
+                <h3 class="h4">📊 Performance</h3>
+
+                <p>Trained on manually aligned wetland masks (NWI-aligned), evaluated on hold-out watersheds:</p>
+
+                <table style="margin-bottom: 1rem;">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Value (± SD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>mIoU</td>
+                            <td>0.73 ± 0.06</td>
+                        </tr>
+                        <tr>
+                            <td>F1 Score</td>
+                            <td>0.84 ± 0.05</td>
+                        </tr>
+                        <tr>
+                            <td>Precision</td>
+                            <td>0.88 ± 0.04</td>
+                        </tr>
+                        <tr>
+                            <td>Recall</td>
+                            <td>0.81 ± 0.07</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Even without spectral imagery, terrain features alone provide strong predictive power.</p>
+            </div> 
+
+            <!-- Space Before h4 Heading-->
+            <div class="container space-top-1"></div>
+            <!-- End of Space Before h4 Heading-->
+
+            <div class="w-lg-60 mx-lg-auto">
+                <h3 class="h4">🖼️ Example Output</h3>
+
+                <p>Here's the predicted wetland mask for a HUC12 in the Pacific Northwest:</p>
+                <figure class="my-4">
+                    <img class="img-fluid rounded" src="../assets/img/Blog/wetlands/pnw-prediction.png" alt="PNW prediction">
+                </figure>
+            </div> 
+
+            <!-- Space Before h4 Heading-->
+            <div class="container space-top-1"></div>
+            <!-- End of Space Before h4 Heading-->
+
+            <div class="w-lg-60 mx-lg-auto">
+                <h3 class="h4">🌐 What's Next</h3>
+
+                <p>We're integrating:</p>
+
+                <ul>
+                    <li>🛰️ Multi-sensor fusion (NDVI, Sentinel-1 SAR)</li>
+                    <li>🌍 Cross-regional generalization</li>
+                    <li>🤖 Agent Earth AI workflows</li>
                 </ul>
+
+                <p>Want to try it on your watershed? Want to contribute your own wetland labels or features?</p>
+
+                <p>📬 <a href="mailto:hello@sweep.run">Contact us</a> — or open an issue on <a href="https://github.com/SWEEP-Inc/SWEEP-Workflows/issues">GitHub</a>.</p>
+            </div> 
+
+            <!-- Space Before h4 Heading-->
+            <div class="container space-top-1"></div>
+            <!-- End of Space Before h4 Heading-->
+
+            <div class="w-lg-60 mx-lg-auto">
+                <h3 class="h4">🔗 Links</h3>
+                <ul>
+                    <li>🔧 GitHub: <a href="https://github.com/SWEEP-Inc/sweep-wetlands/">https://github.com/SWEEP-Inc/sweep-wetlands/</a></li>
+                    <li>🤗 Model: <a href="https://huggingface.co/dotmotelabs/Unet-ASPP">Hugging Face U-Net Weights</a></li>
+                </ul>
+            </div> 
+
+            <!-- Space Before h4 Heading-->
+            <div class="container space-top-1"></div>
+            <!-- End of Space Before h4 Heading-->
+            
+
+            <div class="w-lg-60 mx-lg-auto">
+                <h3 class="h4">🙌 Acknowledgments</h3>
+
+                <p>Built by <a href="https://dotmotelabs.com/">DotMote Labs</a></p>
+
+                <p>Special thanks to contributors working on hydrology, terrain, and climate-resilient mapping.</p>
             </div>
 
             <!-- Space Before h4 Heading-->
@@ -234,42 +268,6 @@
             <!-- End of Space Before h4 Heading-->
 
             <div class="w-lg-60 mx-lg-auto">
-                <!-- <div class="card bg-img-hero bg-primary text-white text-center p-5 my-4" style="background-image: url(../assets/svg/components/abstract-shapes-11.svg);">
-                        <h4 class="h5 mb-3">Like what you're reading? Subscribe to our top stories.</h4> -->
-
-                <!-- Form -->
-                <!-- <form class="js-validate w-md-75 mx-md-auto">
-                            <div class="js-form-message">
-              <div class="d-flex align-items-center">
-                  <label class="sr-only" for="subscribeSrArticle">Subscribe</label>
-                  <div class="input-group">
-                      <input type="email" class="form-control" name="email" id="subscribeSrArticle" placeholder="Your email" aria-label="Your email" required
-                            data-msg="Please enter a valid email address."
-                            data-error-class="u-has-error"
-                            data-success-class="u-has-success">
-                  </div>
-                  <button type="submit" class="btn btn-outline-white ml-3">Submit</button>
-                                </div>
-                            </div>
-                        </form> -->
-                <!-- End Form -->
-                <!-- </div> -->
-
-                <!-- <p class="h6 font-weight-normal">Follow us on <a class="link-muted" href="#">Medium</a>, <a
-                        class="link-muted" href="#">Twitter</a>, <a class="link-muted" href="#">Facebook</a>, <a
-                        class="link-muted" href="#">YouTube</a>, and <a class="link-muted" href="#">Dribbble</a>.</p> -->
-
-                <!-- Badges -->
-                <div class="mt-5">
-                    <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">Tag
-                            1</a></span>
-                    <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">Tag
-                            2</a></span>
-                    <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">Tag
-                            3</a></span>
-                </div>
-                <!-- End Badges -->
-
                 <!-- Share -->
                 <div class="row justify-content-sm-between align-items-sm-center mt-5">
                     <div class="col-sm-6">
@@ -277,7 +275,7 @@
                             <h4 class="font-size-1 font-weight-medium text-uppercase mb-0 mr-3">Share:</h4>
 
                             <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent rounded-circle ml-2"
-                                href="http://www.facebook.com/share.php?u=https://dotmotelabs.com/BlogArticles/external-heat-ratio.html"
+                                href="http://www.facebook.com/share.php?u=https://dotmotelabs.com/BlogArticles/wetlands.html"
                                 target="_blank">
                                 <span class="fab fa-facebook-f btn-icon__inner"></span>
                             </a>
@@ -313,16 +311,16 @@
                 <!-- Author -->
                 <div class="media align-items-center border-top border-bottom py-5 my-8">
                     <div class="u-lg-avatar">
-                        <img class="img-fluid rounded-circle" src="../assets/img/AboutUs/kevin.jpeg"
-                            alt="Kevin Profile Picture">
+                        <img class="img-fluid rounded-circle" src="../assets/img/AboutUs/aji.jpeg"
+                            alt="Aji Profile Picture">
                     </div>
                     <div class="media-body ml-3">
                         <small class="d-block text-muted text-uppercase">Written by</small>
-                        <h3 class="h5 font-weight-medium mb-0"><a href="#">Kevin Xu</a>
+                        <h3 class="h5 font-weight-medium mb-0"><a href="#">Aji John</a>
                             <!-- <button type="button"
                                 class="btn btn-xs btn-soft-primary font-weight-medium transition-3d-hover py-1 px-2 ml-1">Follow</button> -->
                         </h3>
-                        <p class="mb-0">Engineer @ Dotmote Labs</p>
+                        <p class="mb-0">CEO @ Dotmote Labs</p>
                     </div>
                 </div>
                 <!-- End Author -->
