@@ -27,7 +27,7 @@ class TopNav extends HTMLElement {
                         <div id="navBarBasic" class="collapse navbar-collapse u-header__navbar-collapse">
                             <ul class="navbar-nav u-header__navbar-nav">
                                 <!-- Link -->
-                                <li class="nav-item u-header__nav-item active">
+                                <li class="nav-item u-header__nav-item">
                                     <a class="nav-link u-header__nav-link" href="../index.html">Home</a>
                                 </li>
                                 <!-- End Link -->
