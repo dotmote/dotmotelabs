@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
-        content="See how SWEEP supports extreme heat-dome analysis by making data-intensive research workflows easier to coordinate and reproduce.">
+        content="Learn how SWEEP supported analysis of nine years of PlanetScope imagery across The Nature Conservancy's 33 km² Ellsworth Creek Preserve.">
 
     <link rel="apple-touch-icon" sizes="180x180" href="../design/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../design/favicon/favicon-32x32.png">
@@ -68,9 +68,11 @@
                     </div>
                 </div>
 
-                <p>Extreme heat events are more than a single temperature record. Understanding their impacts can mean
-                    working across observations, locations, and analysis steps—and making sure the workflow can be run
-                    consistently as the research grows.</p>
+                <p>When the Pacific Northwest experienced an exceptional heat dome in June 2021, researchers wanted
+                    to understand not just how hot it became, but how forests responded across an entire growing
+                    season—and whether those changes persisted. Answering that question meant looking beyond a single
+                    image or site. Researchers assembled a multi-year record of satellite observations across forest
+                    types and locations, then compared seasonal canopy greenness before, during, and after the event.</p>
 
                 <figure class="my-4">
                     <img class="img-fluid rounded" src="../assets/img/Blog/forest-canopy/image2.png"
@@ -79,35 +81,66 @@
                     </figcaption>
                 </figure>
 
-                <p>A new peer-reviewed study examines an extreme heat-dome event and demonstrates the value of
-                    computational workflows for this kind of environmental analysis. <a
-                        href="https://doi.org/10.1080/15481603.2026.2728824" target="_blank" rel="noopener">Read the
+                <p>The peer-reviewed study focused on Ellsworth Creek Preserve, a 33 km² landscape in Washington
+                    managed by The Nature Conservancy (TNC). Much of the preserve was formerly industrial timberland;
+                    today, it is part of a watershed-scale experiment exploring how forest management can restore
+                    old-growth characteristics. The study compared clearcut, old-growth remnant, thinned, and
+                    unthinned control sites, bringing a broad range of canopy conditions into the same analysis.
+                    <a href="https://doi.org/10.1080/15481603.2026.2728824" target="_blank" rel="noopener">Read the
                         published study</a>.</p>
             </div>
 
             <div class="w-lg-60 mx-lg-auto">
-                <h2 class="h4">Why workflow orchestration matters</h2>
-                <p>Heat-dome research can involve substantial data and a sequence of processing and analysis tasks.
-                    Researchers need to coordinate those tasks, manage the computational work, and be able to repeat
-                    the analysis. Handling each step manually can make it harder to scale the work or reproduce it
-                    later.</p>
-                <p><a href="https://sweep.run/" target="_blank" rel="noopener">SWEEP</a> is a cloud workflow
-                    orchestrator that helps researchers run data-intensive workflows across cloud providers. In this
-                    study, SWEEP supported the analysis workflow, helping connect the computational process to the
-                    scientific question.</p>
+                <h2 class="h4">Nine years of satellite observations across a TNC preserve</h2>
+                <p>The team used Planet Labs' PlanetScope imagery, a four-band surface-reflectance product collected
+                    by the SuperDove satellite fleet at approximately 3–5 m ground resolution. The study assembled
+                    imagery spanning nine years, from 2017 through 2025, for 120 plots distributed across the
+                    preserve. Sixty plots came from the established vegetation-monitoring network in thinned and
+                    control stands; additional plots represented clearcuts and old-growth remnants.</p>
+                <p>For each plot, the researchers worked with a 30 m by 30 m image area centered on the site and
+                    derived spectral summaries—including the normalized difference vegetation index (NDVI), a
+                    measure of vegetation greenness. Images with more than 15% cloud cover were excluded. Applying
+                    consistent preparation and extraction steps across years, locations, and forest conditions is a
+                    substantial part of turning satellite imagery into a dataset that can answer ecological
+                    questions.</p>
 
-                <h2 class="h4 mt-5">From a complex event to a repeatable workflow</h2>
-                <p>For extreme-event analysis, an orchestrated workflow can make it easier to organize data processing
-                    and analytical tasks into a repeatable sequence. That structure helps researchers focus on
-                    interpreting the evidence rather than manually coordinating every computational step.</p>
-                <p>SWEEP is designed to help run workflows at scale while keeping their steps organized. The approach
-                    can support research that needs to bring together large or distributed datasets and can make
-                    computational methods easier to rerun as new data or questions emerge.</p>
+                <h2 class="h4 mt-5">How SWEEP supported the imagery workflow</h2>
+                <p>The Planet imagery was downloaded and prepared for analysis through SWEEP, a cloud-agnostic
+                    workflow execution provider. SWEEP helped support the computational work needed to carry the
+                    imagery-processing workflow across a multi-year collection and a network of sites within a
+                    33 km² preserve. Rather than treating every image and plot as a separate manual task, researchers
+                    could organize the processing as a workflow—an important foundation for applying consistent
+                    analysis steps across a large environmental dataset.</p>
+                <p>This kind of orchestration matters when a research question depends on both temporal depth and
+                    geographic coverage. A single scene can offer a snapshot; a workflow that processes observations
+                    across nine years and many plots makes it possible to compare seasonal patterns, forest
+                    conditions, and changes over time. SWEEP's role was to support that data-preparation process,
+                    helping connect Planet's observations to the downstream statistical analysis.</p>
+                <p>The analysis then examined seasonal NDVI patterns, including how greenness changed through the
+                    growing season and how those patterns differed between the years before, during, and after the
+                    2021 event. The researchers could evaluate the heat dome in a longer context because the imagery
+                    workflow provided comparable observations across multiple years—not just a before-and-after
+                    pair.</p>
+
+                <h2 class="h4 mt-5">What the study found</h2>
+                <p>Across the study sites, 2021 stood out: NDVI declined over the growing season, unlike the more
+                    stable or greening seasonal trends observed in most comparison years. The analysis found
+                    suppression across forest types during the heat-dome year, while statistical comparisons
+                    provided limited evidence that canopy density changed the magnitude of that suppression.
+                    Seasonal patterns moved back toward their earlier trajectories in subsequent years, but overall
+                    greenness—especially peak seasonal greenness—had not fully returned to pre-event levels in the
+                    period examined.</p>
+                <p>These findings illustrate why a long, consistent record matters. It helps distinguish an unusual
+                    season from ordinary year-to-year variation and lets researchers examine recovery as a trajectory
+                    rather than infer it from a single follow-up observation. The study's results concern remotely
+                    sensed canopy greenness; they do not by themselves establish every mechanism behind forest
+                    response.</p>
 
                 <h2 class="h4 mt-5">Explore the research</h2>
-                <p>The paper presents the study and its scientific findings. We invite researchers working with
-                    environmental data and extreme events to read the publication and explore how workflow
-                    orchestration can support their own analyses.</p>
+                <p>The paper describes the study design, imagery, statistical methods, and findings in detail. For
+                    researchers working with satellite data, it is also an example of how workflow orchestration can
+                    support repeatable preparation of imagery across years and sites—so that analysis can focus on
+                    the environmental questions that matter.</p>
                 <p><a class="btn btn-primary" href="https://doi.org/10.1080/15481603.2026.2728824" target="_blank"
                         rel="noopener">Read the paper</a></p>
                 <p>Learn more about <a href="https://sweep.run/" target="_blank" rel="noopener">SWEEP cloud
